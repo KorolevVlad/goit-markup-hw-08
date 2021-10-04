@@ -90,7 +90,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container-header {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -890,6 +890,7 @@ img {
   .solution {
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
   }
   .solution__text {
     min-width: 696px;

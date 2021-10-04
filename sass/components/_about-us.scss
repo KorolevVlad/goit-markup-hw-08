@@ -16,6 +16,9 @@
 .our-works {
   display: flex;
   margin-top: 50px;
+  @media screen and(min-width: $desktop) {
+    margin-top: 0;
+  }
   &__list {
     margin-right: 30px;
     width: 370px;

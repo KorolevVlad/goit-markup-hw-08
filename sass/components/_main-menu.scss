@@ -1,9 +1,8 @@
 .main-menu {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  @media screen and(min-width: $mobile) {
-    padding-top: 60px;
+  padding-top: 60px;
     padding-bottom: 60px;
+  @media screen and(min-width: $mobile) {
+   
   }
   @media screen and(min-width: $desktop) {
     padding-top: 94px;
@@ -29,12 +28,9 @@
 }
 
 .competence {
-  // display: flex;
   &__list {
     margin: 0;
     padding: 0;
-    // margin-right: 30px;
-    // width: 270px;
   }
   &__list:last-child {
     margin-right: 0;
@@ -53,7 +49,6 @@
 @media screen and(min-width: $mobile) {
   .competence__list {
     max-width: 450px;
-    // margin-right: 0;
   }
 }
 @media screen and(min-width: $tablet) {

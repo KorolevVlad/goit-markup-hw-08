@@ -89,6 +89,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container-header {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container-header__logo {
     display: -webkit-box;
@@ -115,7 +121,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-header__logo-studio {
     padding-right: 88px;
   }
@@ -553,8 +559,7 @@ img {
 
 .menu-container .mobile-menu__link {
   font-size: 18px;
-  line-height: 22px;
-  /* identical to box height, or 122% */
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -598,15 +603,8 @@ img {
 }
 
 .main-menu {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-@media screen and (min-width: 480px) {
-  .main-menu {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -759,6 +757,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-works {
+    margin-top: 0;
+  }
 }
 
 .our-works__list {
@@ -930,9 +934,16 @@ img {
 }
 
 .our-work-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+
+@media screen and (mi-width: 1200px) {
+  .our-work-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team {
@@ -1000,6 +1011,18 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team__photo {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-team__photo:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .about-our-team {
   padding: 30px 32px;
 }
@@ -1056,7 +1079,13 @@ img {
 }
 
 .regular-clients {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients {
+    padding: 94px 0;
+  }
 }
 
 .regular-clients__title {
@@ -1070,6 +1099,12 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients__title {
+    padding-bottom: 50px;
+  }
 }
 
 .regular-clients__logo {
@@ -1187,6 +1222,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer {
     height: 252px;
+    padding-left: 15px;
   }
 }
 
@@ -1239,11 +1275,38 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .address {
   font-style: normal;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    text-align: left;
+  }
 }
 
 .footer-contacts__title {
@@ -1275,6 +1338,21 @@ img {
 @media screen and (min-width: 768px) {
   .follow-us {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .follow-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1480,6 +1558,13 @@ img {
 
 .portfolio-works__list {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-works__list {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-works__list:last-child {
@@ -1563,6 +1648,12 @@ img {
   padding-top: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .container-projects:first-child {
+    padding-top: 30px;
+  }
+}
+
 .container-projects:hover, .container-projects:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1593,6 +1684,12 @@ img {
   color: #757575;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-projects__text-tablet {
+    padding-bottom: 36px;
+  }
 }
 
 .portfolio-projects--absolute {

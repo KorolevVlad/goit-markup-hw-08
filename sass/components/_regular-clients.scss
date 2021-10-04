@@ -1,11 +1,12 @@
 .our-regular-clients {
-  // display: block;
-
   margin: 0 auto;
 }
 
 .regular-clients {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and(min-width: $desktop) {
+    padding: 94px 0;
+  }
   &__title {
     @include font(
       $primary-text-family,
@@ -21,6 +22,10 @@
 
     margin: 0;
     padding: 0;
+
+    @media screen and(min-width: $desktop) {
+      padding-bottom: 50px;
+    }
   }
   &__logo {
     fill: currentColor;
@@ -39,7 +44,6 @@
   justify-content: center;
   align-items: center;
 
-  // width: 210px;
   height: 92px;
   cursor: pointer;
 
@@ -58,7 +62,6 @@
 }
 
 .regular-clients__link {
-  // max-width: 210px;
   @media screen and(min-width: $tablet) {
     width: 226px;
   }
@@ -67,29 +70,13 @@
   }
 }
 
-// .regular-clients__list {
-//   // margin-right: 30px;
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
 
 .our-works-clients {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // width: 100vw;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // gap: 30px;
-  // @media screen and(min-width: $mobile) {
-  //   // max-width: 354px;
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  //   gap: 30px;
-  // }
+
   @media screen and(min-width: $tablet) {
-    // max-width: 354px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;

@@ -29,6 +29,11 @@
 
 .portfolio-works__list {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 0;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -111,6 +116,9 @@
   background-color: $primary-white-color;
   &:first-child {
     padding-top: 40px;
+    @media screen and(min-width: $tablet) {
+      padding-top: 30px;
+    }
   }
   &:hover,
   &:focus {
@@ -151,6 +159,13 @@
 
   margin: 0;
   padding: 0;
+}
+
+
+@media screen and(min-width: $tablet) and(max-width: 1199px) {
+  .portfolio-projects__text-tablet {
+    padding-bottom: 36px;
+  }
 }
 
 .portfolio-projects--absolute {
@@ -203,6 +218,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+ 
 }
 
 .portfolio-projects__title {

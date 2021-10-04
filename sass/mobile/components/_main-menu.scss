@@ -1,0 +1,72 @@
+@media screen and (max-width: 480px) {
+  .main-menu {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .container-competence {
+    margin: 0 auto;
+    // padding: 0 15px;
+  }
+
+  .achievement {
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .competence {
+    // display: flex;
+    &__list {
+      margin: 0;
+      padding: 0;
+      // margin-right: 30px;
+      // width: 270px;
+    }
+    &__list:last-child {
+      margin-right: 0;
+    }
+    &__icon {
+      height: 120px;
+      margin-bottom: 30px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .competence {
+    &__icon-svg {
+      width: 70px;
+      height: 70px;
+    }
+    &__title {
+      @include font(
+        $primary-text-family,
+        normal,
+        700,
+        14px,
+        1.14,
+        0.03em,
+        $secondary-text-color
+      );
+
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__text {
+      margin: 0;
+    }
+  }
+}

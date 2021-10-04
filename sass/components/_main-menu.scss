@@ -1,0 +1,126 @@
+.main-menu {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  @media screen and(min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and(min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.container-competence {
+  margin: 0 auto;
+}
+
+.achievement {
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.competence {
+  // display: flex;
+  &__list {
+    margin: 0;
+    padding: 0;
+    // margin-right: 30px;
+    // width: 270px;
+  }
+  &__list:last-child {
+    margin-right: 0;
+  }
+  &__icon {
+    height: 120px;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and(min-width: $mobile) {
+  .competence__list {
+    max-width: 450px;
+    // margin-right: 0;
+  }
+}
+@media screen and(min-width: $tablet) {
+  .competence__list {
+    max-width: 354px;
+  }
+}
+@media screen and(min-width: $desktop) {
+  .competence__list {
+    max-width: 270px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and(min-width: $mobile) {
+  .competence {
+    display: block;
+  }
+  .competence__list {
+    margin-right: 0;
+  }
+}
+
+@media screen and(min-width: $tablet) {
+  .competence {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and(min-width: $desktop) {
+  .competence {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+
+.competence {
+  &__icon-svg {
+    width: 70px;
+    height: 70px;
+  }
+  &__title {
+    @include font(
+      $primary-text-family,
+      normal,
+      700,
+      14px,
+      1.14,
+      0.03em,
+      $secondary-text-color
+    );
+
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media screen and(min-width: $mobile) {
+      text-align: center;
+    }
+    @media screen and(min-width: $tablet) {
+      text-align: left;
+    }
+  }
+  &__text {
+    margin: 0;
+  }
+}

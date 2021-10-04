@@ -1,0 +1,199 @@
+.solution {
+  // max-width: 768px;
+  height: 400px;
+
+  // @include font(
+  //   $primary-text-family,
+  //   normal,
+  //   900,
+  //   26px,
+  //   1.62,
+  //   0.06em,
+  //   $primary-white-color
+  // );
+  // text-align: center;
+  // text-transform: uppercase;
+
+  // max-width: 1600px;
+  // margin: auto;
+
+  background-color: #c4c4c4;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg480.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 0px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .solution {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .solution {
+    // max-width: 768px;
+    height: 400px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg768.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .solution {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg768@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .solution {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg1600.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .solution {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg1600@2x.jpg);
+    }
+  }
+}
+
+// . .title {
+//   @extend %title;
+//   display: block;
+//   color: $white-color;
+
+//   margin-bottom: 46px;
+//   font-weight: 900;
+//   font-size: 26px;
+//   line-height: 1.62;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 44px;
+//     line-height: 1.36;
+//   }
+// }
+
+.solution {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__text {
+    color: $primary-white-color;
+
+    @include font(
+      $primary-text-family,
+      normal,
+      900,
+      26px,
+      1.62,
+      0.06em,
+      $primary-white-color
+    );
+    text-align: center;
+    text-transform: uppercase;
+
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and(min-width: $desktop) {
+  .solution {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .solution__text {
+    min-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and(min-width: $tablet) {
+  .solution__text {
+    max-width: 360px;
+  }
+}
+
+.solution__button {
+  background-color: $primary-blue-color;
+  color: $primary-white-color;
+
+  @include font(
+    $primary-text-family,
+    normal,
+    700,
+    16px,
+    1.87,
+    0.06em,
+    $primary-white-color
+  );
+
+  padding: 10px 32px;
+  border-radius: 6px;
+  text-align: center;
+
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}

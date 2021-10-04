@@ -1,0 +1,54 @@
+@media screen and (min-width: 480px) {
+  .about-us {
+    display: none;
+  }
+}
+
+.info-about-us {
+  margin: 0 auto;
+}
+
+.about-us {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.our-works {
+  // display: flex;
+  margin-top: 50px;
+  &__list {
+    margin-right: 30px;
+    max-width: 370px;
+    position: relative;
+  }
+  &__list:last-child {
+    margin-right: 0;
+  }
+}
+
+.our-works__image {
+  content: '';
+  position: absolute;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  left: 0;
+  bottom: 0;
+}
+
+.our-works__image {
+  @include font(
+    $primary-text-family,
+    normal,
+    700,
+    14px,
+    1.14,
+    0.03em,
+    $primary-white-color
+  );
+  text-transform: uppercase;
+}

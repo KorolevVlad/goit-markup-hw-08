@@ -1,4 +1,5 @@
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   z-index: 5;
   top: 0;
@@ -23,6 +24,15 @@
 .modal {
   @media screen and(max-width: 767px) {
     width: calc(100% - 2 * 15px);
+    top: 0;
+    // height: 609px;
+    transform: translate(-50%, 0);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc(100% - 2 * 159px);
+    top: 40%;
+    transform: translate(-50%, -40%);
   }
 
   @media screen and(min-width: $desktop) {

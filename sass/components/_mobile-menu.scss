@@ -59,6 +59,7 @@
 }
 
 .menu-container {
+  
   display: flex;
 
   position: fixed;
@@ -90,6 +91,8 @@
   }
 }
 
+
+
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -113,6 +116,13 @@
   line-height: 1.18;
 
   color: $primary-blue-color;
+}
+.menu-container .mobile-menu__contacts--tel {
+  @media screen and(max-width: 378px) {
+    font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  }
 }
 .menu-container .mobile-menu__contacts--mail {
   font-size: 24px;
